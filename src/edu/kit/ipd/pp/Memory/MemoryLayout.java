@@ -1,4 +1,4 @@
-package Memory;
+package edu.kit.ipd.pp.Memory;
 
 public class MemoryLayout {
 	public final int alignment;
