@@ -18,6 +18,10 @@ public class MemoryLayout {
 	}
 
 	public int getFloAlignment(int offset){
+		if (offset % this.alignment == 0) {
+			return offset;
+		}
+
 		return offset + (alignment - (offset % alignment));
 	}
 }
