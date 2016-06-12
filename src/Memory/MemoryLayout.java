@@ -13,11 +13,11 @@ public class MemoryLayout {
 		return ((offset / this.alignment) + 1) * this.alignment;
 	}
 
-	public int getAltAlignment(int offset, int alignment){
+	public int getAltAlignment(int offset){
 		return (offset + this.alignment - 1) / this.alignment * this.alignment;
 	}
 
-	public int getFloAlignment(int offset, int alignment){
+	public int getFloAlignment(int offset){
 		return offset + (alignment - (offset % alignment));
 	}
 }
